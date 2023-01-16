@@ -4,6 +4,7 @@ dotenv.config()
 
 const PORT = process.env.PORT || 4000;
 const DEFAULT_URL = '/api/users';
+
 type UserType = { id?: string, username: string, age: number, hobbies: string[] };
 type USERS_TYPE = { [id: string]: UserType };
 const USERS: USERS_TYPE = {};
